@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/fp_style.css">
+    <script src="jquery-1.11.3.js"></script>
+    <script src="jquery.fullPage.min.js"></script>
+    <!-- <link rel="stylesheet" href="jquery.fullPage.css"> -->
+    <title>Tron Weasley</title>
+</head>
+<body>
+    <div class="header">
+        <!-- navbar -->
+        <div id="navbar">
+                <a href="#page1">Home</a>
+                <a href="#page2">What?</a>
+                <a href="#page3">Discography</a>
+                <a href="#page4">Tron In Real Life</a>
+                <a href="#page5">Store</a>
+                <a href="#page6">Contact</a>
+        </div>
+    </div>
+    <!-- creating different sections -->
+    <div id="wrapper">
+        <!-- HOME PAGE -->
+        <div class="section" data-anchor="page1">
+            <!-- Bandcamp Player -->
+            <div class= "bandcamp">
+                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2328359174/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="http://tronweasley.bandcamp.com/album/magnetic-router-sounds-vol-1">Magnetic Router Sounds Vol. 1 by Tron Weasley</a></iframe>
+            </div>
+            <!-- Welcome Phrase -->
+            <div class="welcome">
+                <p>Magnetic Router Sounds, Vol. 1 is out NOW!</p>
+            </div>   
+        </div>
+        <!-- ABOUT PAGE -->
+        <div class="section" data-anchor="page2">
+                <!-- ABOUT PHOTO -->
+                <div>
+                    <img class="blake" src="assets/images/tron_cheer.jpg">
+                </div>
+                <!-- Here I will have the bio -->
+                <div class="bio">
+                    <h1>About</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium impedit iure aperiam quam! Provident, tempore numquam cupiditate ad blanditiis vitae eum labore quae sint officia vel voluptatem a necessitatibus?</p>
+                </div>
+        </div>
+        <!-- DISCOGRAPHY PAGE -->
+        <div class="section">
+            <!-- 3d album thing -->
+            <div class="wrapper">
+                    <h1>Discography</h1>
+                    <ul class="albums">
+                    <li class="scene">
+                        <div class="album">
+                            <div class="poster"></div>
+                            <div class="info">
+                            <header>
+                                <div>
+                                    <h1 id="tom">Magnetic Router Sounds, Vol. 1</h1>
+                                    <span class="year">2020</span>
+                                    <span class="rating">PG</span>
+                                    <span class="duration">30 minutes</span>
+                                </div>
+                            </header>
+                            <p>
+                                Magnetic Router Sounds: an ongoing series of moods colored within and around an effervescent electronic backdrop. This volume was made with a Yamaha DX7 and a Hammond Auto-Vari 64. 
+                            </p>
+                            </div>
+                        </div>
+                    </li>  
+                    <li class="scene">
+                            <div class="album">
+                                <div class="poster"></div>
+                                <div class="info">
+                                <header>
+                                    <div>
+                                        <h1 id="tom">Modal Fixture</h1>
+                                        <span class="year">2020</span>
+                                        <span class="rating">PG-13</span>
+                                        <span class="duration">50 minutes</span>
+                                    </div>
+                                </header>
+                                <p>
+                                    These are the Episodes from the Modal Fixture: scenes and messages from the modern folklore of the collectively unconscious. Coming Summer 2020!
+                                </p>
+                                </div>
+                            </div>
+                        </li>
+                <li class="scene">
+                        <div class="album">
+                            <div class="poster"></div>
+                            <div class="info">
+                            <header>
+                                <div>
+                                    <h1 id="tom">Medieval Surges</h1>
+                                    <span class="year">2020</span>
+                                    <span class="rating">R</span>
+                                    <span class="duration">35 minutes</span>
+                                </div>
+                            </header>
+                            <p>
+                                Medieval Surges: Metallic Action, Emotional Abstraction. Coming Fall 2020!
+                            </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="scene">
+                            <div class="album">
+                                <div class="poster"></div>
+                                <div class="info">
+                                <header>
+                                    <div>
+                                        <h1 id="tom">Maybe I'm a Leo</h1>
+                                        <span class="year">2020</span>
+                                        <span class="rating">PG-13</span>
+                                        <span class="duration">30 minutes</span>
+                                    </div>
+                                </header>
+                                <p>
+                                    Maybe I'm a Leo: a collection of reinterpretations of pieces from Leonard Nemoy's solo work. Coming Fall 2020!
+                                </p>
+                                </div>
+                            </div>
+                        </li>
+                </ul> 
+            </div>
+        </div>
+        <!-- SHOWS PAGE -->
+        <div class="section" data-anchor="page4">
+            <!-- Here I will have shows listed -->
+            <div class="new-show">
+                    <p>Whoaa there! No new shows currently, check back soon!</p>
+            </div>
+        </div>
+        <!-- STORE PAGE -->
+        <div class="section" data-anchor="page5">
+            <!-- Here I will have merch for sale-->
+            <div class="new-show">
+                <p>Store coming soon!</p>
+            </div>
+        </div>
+        <!-- CONTACT PAGE -->
+        <div class="section" data-anchor="page5">
+            <!-- Here i will put the contact info -->
+            <div class="contact">
+                <h1>Contact</h1>
+                <p>Email: tron.weasley.music@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripture -->
+    <script>
+            $(document).ready(function(){
+                $('#wrapper').fullpage();
+            });
+            </script>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright © 2020</p> 
+    </div>
+
+</body>
+</html>
